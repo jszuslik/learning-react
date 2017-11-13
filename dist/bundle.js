@@ -67,7 +67,7 @@
 /* 0 */
 /***/ (function(module, exports) {
 
-throw new Error("Module parse failed: Unexpected token (5:16)\nYou may need an appropriate loader to handle this file type.\n| import App from './App';\n| \n| ReactDOM.render(<App />, document.getElementById('root'));\n| ");
+throw new Error("Module parse failed: Unexpected token (5:16)\nYou may need an appropriate loader to handle this file type.\n| import App from './App';\n| console.log(ReactDOM);\n| ReactDOM.render(<App />, document.getElementById('root'));\n| ");
 
 /***/ })
 /******/ ]);
