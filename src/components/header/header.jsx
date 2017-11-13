@@ -1,20 +1,20 @@
 import PropTypes from 'prop-types';
-import React, { Component } from 'react';
+import React from 'react';
 
-export class Header extends Component {
+export class Header extends React.Component {
 
     static get propTypes() {
         return {
             title: PropTypes.string,
             menu_icon: PropTypes.string
-        }
+        };
     };
 
     static get defaultProps() {
         return {
             title: 'OmniBot',
             menu_icon: ''
-        }
+        };
     };
 
     getTitle() {
@@ -24,7 +24,7 @@ export class Header extends Component {
         const second = this.props.title.substr(n);
         return (
             <h1 className="site-title"><a href="#">{first}<span className="site-title-last">{second}</span></a></h1>
-        )
+        );
     }
 
     render() {
@@ -32,6 +32,6 @@ export class Header extends Component {
             <div className="Header fixed-top">
                 {this.getTitle()}
             </div>
-       )
+       );
     }
 }

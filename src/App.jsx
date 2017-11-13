@@ -1,14 +1,14 @@
-import { React, Component } from 'react';
-import './App.scss';
-import {Header} from "./components/header/header";
+import React from 'react';
+//import './App.scss';
+import { Header } from './components/header/header.jsx';
 
-export class App extends Component {
+export class App extends React.Component {
   render() {
     return (
       <div className="App">
-          <Header/>
+          <Header />
       </div>
-    );
+    )
   }
 }
 
